@@ -1,0 +1,116 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+body {
+    background: #212121;
+    --black: #000000;
+    --ash-black: #222;
+    --white: #fafafa;
+    --sky: #00ccff;
+    --green: #22dddd;
+    --blue: #1300ff;
+    --dusk: #6600ff;
+    --purple: #9900ff;
+    --pink: #ff0066;
+    --red: #fe0222;
+    --orange: #fd7702;
+    --yellow: #ffbb00;
+  
+    --background: var(--black);
+    --accent: var(--white);
+
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--accent);
+  padding-bottom: 100px;
+  overflow: scroll;
+  
+}
+
+#wrapper{
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 20px;
+  }
+
+footer {
+    position: absolute;
+    width:98%;
+    height:20px;
+    bottom: -393px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px dotted var(--accent);
+    background-image: radial-gradient(
+      rgba(118, 31, 31, 0) 1px,
+      var(--background) 1px
+    );
+    background-size: 4px 4px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    -moz-backdrop-filter: blur(3px);
+    font-size: 25px;
+    line-height: 14px;
+    transform : translateY(-0%);
+    word-spacing: 20em;
+
+    
+  }
+ 
+  footer svg {
+    margin-right: 10px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: var(--accent);
+  }
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background: var(--accent);
+  }
+
+  .ul {
+    display: flex;
+    list-style: none;
+    height: 300px;
+    overflow-x: scroll;
+    padding: 20px 0;
+    flex: 0 0 600px;
+    margin: 0 auto;
+  }
+  
+  ::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background: rgba(160, 11, 11, 0.2);
+    -webkit-border-radius: 1ex;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: #ccc;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: rgba(166, 12, 12, 0.2);
+  }
+/* 아래의 모든 코드는 영역::코드로 사용 */
+.scrollBar::-webkit-scrollbar {
+    width: 10px;  /* 스크롤바의 너비 */
+}
+
+
