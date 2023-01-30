@@ -34,6 +34,40 @@ body {
   
 }
 
+header {
+  
+  position: sticky;
+  top: 0; /* 클래스 sticky인 요소 안에서 top값이 0이되면 sticky를 적용 */
+  background: #8a4baf;
+}
+
+/* header {
+  position: absolute;
+  width:98%;
+  height:20px;
+  bottom: 446px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  border-top: 1px dotted var(--accent);
+  background-image: radial-gradient(
+    rgba(220, 6, 6, 0) 1px,
+    var(--background) 1px
+  );
+  background-size: 4px 4px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  -moz-backdrop-filter: blur(3px);
+  font-size: 25px;
+  line-height: 14px;
+  transform : translateY(-111%);
+  word-spacing: 20em;
+} */
+
+
 #wrapper{
     height: auto;
     min-height: 100%;
@@ -44,7 +78,7 @@ footer {
     position: absolute;
     width:98%;
     height:20px;
-    bottom: -393px;
+    bottom: -811px;
     left: 0;
     right: 0;
     display: flex;

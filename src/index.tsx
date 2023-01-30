@@ -33,8 +33,10 @@ function AppWithUI() {
 
 root.render(
   <StrictMode>
+        <Header />
     <AppWithUI />
     <App />
+
   </StrictMode>
 );
 
