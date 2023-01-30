@@ -16,7 +16,10 @@ const Headerdiv = styled.div`
   font-weight: bold; //텍스트 굵기
   text-align: center; //텍스트 정렬 방향
   height: 150px; //높이
-  line-height: 100px; //줄간격
+  line-height: 150px; //줄간격
+  position: sticky;
+  top: 0; //클래스 sticky인 요소 안에서 top값이 0이되면 sticky를 적용
+  background: black; 
 `;
 
 const Header = () =>{

@@ -9,7 +9,7 @@ import { Counter } from './template/Counter';
 
 const style = {};
 export default function App() {
-  const [counter, increase] = React.useReducer((counter) => counter + 1, 0);
+  const [counter, increase,] = React.useReducer((counter) => counter + 1, 0);
   return (
 
     <div className="App">
@@ -18,14 +18,12 @@ export default function App() {
       <h2>클릭 해보셈 고고고고</h2>
       <AnimatedButton />
       <RefreshButton onClick={increase}>새로고침!</RefreshButton>
+  
       <Examples _={counter} />
     </div>
 
   );
 }
-
-
-
 
 const RefreshButton = styled("button", {
   position: "fixed",
